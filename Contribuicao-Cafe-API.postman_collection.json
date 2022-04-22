@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "4a4eb405-dad3-4ea7-8835-b1f1a5788b26",
+		"name": "Contribuicao-Cafe-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastrar Contribuição",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pessoa\": {\r\n        \"cpf\": \"109.444.124.66\",\r\n        \"nome\": \"Hitallo Silva\"\r\n    },\r\n    \"itens\": [\r\n        {\r\n            \"item\" : \"Suco de Acerola\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/contribuicoes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contribuicoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Todos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pessoa\": {\r\n        \"cpf\": \"109.444.124.66\",\r\n        \"nome\": \"Hitallo Silva\"\r\n    },\r\n    \"itens\": [\r\n        {\r\n            \"item\" : \"Suco de Acerola\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/contribuicoes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contribuicoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Por Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pessoa\": {\r\n        \"cpf\": \"109.444.124.66\",\r\n        \"nome\": \"Hitallo Silva\"\r\n    },\r\n    \"itens\": [\r\n        {\r\n            \"item\" : \"Suco de Acerola\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/contribuicoes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contribuicoes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Contribuição Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"pessoa\": {\r\n        \"cpf\": \"109.444.124.66\",\r\n        \"nome\": \"Hitallo Silva\"\r\n    },\r\n    \"itens\": [\r\n        {\r\n            \"item\" : \"Suco de Maracujá\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/contribuicoes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contribuicoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Contribuição",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/contribuicoes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contribuicoes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
